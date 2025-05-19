@@ -1,6 +1,5 @@
-// Files within the Routes folder are responsible for organizing and registering Express route endpoints, 
-// connecting them to controllers.
-// dogRoutes.js is for registering, adopting, listing, etc.
+// Files within the Routes folder are responsible for organizing and registering Express route endpoints, connecting them to controllers.
+// dogRoutes.js is for registering, adopting, and listing dogs etc.
 const express = require("express");
 const router = express.Router();
 const { registerDog, adoptDog } = require("../controllers/dogController");
