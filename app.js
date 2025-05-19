@@ -25,7 +25,7 @@ app.get("/", (req, res) => {
   res.send("API is running");
 });
 
-// ✅ Debug test route to verify POST works
+// Debug test route to verify POST works
 app.post("/test-direct-post", (req, res) => {
   res.json({ success: true, data: req.body });
 });
