@@ -17,7 +17,7 @@ const registerDog = async (req, res) => {
 
     res.status(201).json({ message: "Dog registered successfully!", dog: newDog });
   } catch (error) {
-    console.error("🐶 Registration error:", error);
+    console.error("Registration error:", error);
     res.status(500).json({ message: "Server error" });
   }
 };
@@ -50,12 +50,12 @@ const adoptDog = async (req, res) => {
       dog,
     });
   } catch (error) {
-    console.error("🐾 Adoption error:", error);
+    console.error("Adoption error:", error);
     res.status(500).json({ message: "Server error" });
   }
 };
 
-// Export both functions AFTER declaring them
+// Export both functions after declaring them
 module.exports = {
   registerDog,
   adoptDog,
