@@ -30,5 +30,9 @@ router.get("/test", (req, res) => {
   res.json({ message: "User routes are working!" });
 });
 
+// Dev console message to confirm this file is loaded
+console.log("userRoutes.js loaded");
+
 module.exports = router;
+
 
